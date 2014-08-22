@@ -22,12 +22,10 @@ executable shawty
   build-depends:         base        >= 4.7 && <4.8
                        , scotty      >= 0.8.0
                        , hedis       >= 0.6.0
-                       , mime-mail   >= 0.4.5.0
                        , network-uri >= 2.6.0.0
                        , text
                        , random
                        , bytestring
-                       , word8
                        , transformers
   hs-source-dirs:      src
   default-language:    Haskell2010
