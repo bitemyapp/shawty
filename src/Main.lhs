@@ -168,9 +168,7 @@ If we got 'Right', we're going to proceed.
 >     case uri of
 >       Left reply -> text (TL.pack (show reply))
 
-We proceed because the 'Right' value means the Either value was a "success" idiomatically speaking.
-Here 'mbBS' is the 'Maybe BC.ByteString' that was inside of
-'Either R.Reply (Maybe BC.ByteString)'.
+We proceed because the 'Right' value means the Either value was a "success" idiomatically speaking. Here 'mbBS' is the 'Maybe BC.ByteString' that was inside of 'Either R.Reply (Maybe BC.ByteString)'.
 
 If we got 'Just', we take the 'ByteString' Redis returned and pack it into an HTML
 anchor tag so it is a clickable link for the user to follow. If that happened, the
