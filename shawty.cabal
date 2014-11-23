@@ -18,8 +18,9 @@ cabal-version:       >=1.10
 
 executable shawty
   default-extensions:  OverloadedStrings
-  main-is:             Main.hs
+  main-is:             Main.lhs
   build-depends:         base        >= 4.7 && <4.8
+                       , semigroups  >= 0.15
                        , scotty      >= 0.8.0
                        , hedis       >= 0.6.0
                        , network-uri >= 2.6.0.0
